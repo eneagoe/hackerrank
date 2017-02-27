@@ -13,7 +13,8 @@ y = gets.strip.to_i
 if y != 1918
   days = 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31
 else
-  days = 31 + 14 + 31 + 30 + 31 + 30 + 31 + 31
+  # the 14th day of 1918 was the 32nd day of the year
+  days = 31 + 1 + 14 + 31 + 30 + 31 + 30 + 31 + 31
 end
 days += 1 if leap_year?(y)
 
